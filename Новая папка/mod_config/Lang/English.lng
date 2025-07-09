@@ -1,0 +1,206 @@
+//---------------------------------------------------
+//     Settings in the hangar
+//---------------------------------------------------
+
+name = Customize AutoAim
+description = Mod Setting
+
+windowTitle = Settings for Auto Aim
+buttonOK = OK
+buttonCancel = Cancel
+buttonApply = Apply
+enableButtonTooltip = On / Off
+
+lang_name = Setting language
+lang_text = Choose language
+lang_text_tip = To add language translation,necessary to create a file with the name of the language in the folder /mod_config/Lang.<br>In file keep the structure, convert the text values in the necessary language.
+
+label_name = Basic mod settings
+
+Config_file = Select config
+Config_file_tip = To add more configurations, you must copy the desired file into the directory /mod_config/configs.
+
+Label_1 = Mod status, setup key
+
+Key_Zahvat = Capture key
+Key_Zahvat_tip = Capture works independently from the standard. The coincidence of keys with standard grip, replace it.
+HotKey = Key On / Off and battle mod
+HotKey_tip = - tap - On/Off Mod<br>- Press and hold more than 1 sec. - On / Off function sighting vulnerabilities (Aim_Bot)<br>- tap ALT - On/Off status marker (It is independent of the universal key).
+UniversalKey = Universal key for various functions
+UniversalKey_tip = - To capture an arbitrary point (press this button with a keystroke capture)<br>- For switching the three aiming points, scroll the mouse wheel (hold)<br>- To fix the selected point aimbot (press)<br>- To unlock the scope (hold).
+SetKey = Key settings window in battle
+Key_xyz = Key capture an arbitrary point (If is necessary)
+Key_xyz_tip =Choose your own key to capture an arbitrary point on the tank (If is necessary).<br><B>Attention!</B> If the same as universal key, don`t use same key.
+Mod_xyz = Capture point without a universal key
+Mod_xyz_tip = Capture mode any point without pressing hotkey.
+Sbros = Press the button to reset the points
+Sbros_tip =If <B> On </B> - Press the button to reset the points.<br>If <B>Off</B> - Press the button again to capture new points.<br><B>Attention!</B> Dual keystroke provides the recapture points. 
+Sbros_xyz = Confirm the reset capture point
+Sbros_xyz_tip = If <B>On</B> - Press the button to reset the points.<br>If <B>Off</B> - Press the button again to capture new points on tank.
+Deflection = Anticipate the point of aim
+Deflection_tip = On/Off calculation anticipate, when the target moves.<br><B>Attention!</B> With the anticipation key enabled, press the universal key to temporarily disable it in action.<br>With the anticipation key disabled, press the universal key to temporarily enable it in action.
+Keys_aiming = Key switch three aiming points
+Keys_aiming_tip = <B>Attention!</B> If necessary to switch a point - set the same values.
+KeyTurret = Turret
+KeyCenter = Center
+KeyTracks = Tracks
+Scroll = Scrolling the mouse wheel
+Scroll_tip = Scrolling the mouse wheel while holding the scrollkey:<br> - tap switches aiming point (turret - center - tracks)<br> - continuously adjusts the height of the aiming point<br> - It does not change the zoom operation.
+Scroll1 = Exact
+Scroll2 = Straight
+Scroll3 = Disabled
+CorrTurret = Adjustment  "Turret" point
+CorrCenter = Adjustment  "Center" point
+CorrTracks = Adjustment  "Tracks" point
+Tutorial_mod = Modification status "Combat training"
+Tutorial_mod_tip = Interface "Combat training" becomes like a normal fight for better training and setting mod.
+
+
+Label_2 = Setting of mod
+
+Algorithm = Algorithm of anticipate
+Algorithm_tip = Selecting an algorithm anticipation:<br> - linear - corresponds to the older versions of the algorithm (v18.1)<br> - advanced - corresponds to the new versions of the algorithm (v19.9)<br> - adaptive - corresponds to the newest versions of the algorithm (from v29 and above)<br><B>Attention!</B> Setting anticipation coefficients and parameters of steadiness is produced in a separate configuration file in the catalog /mod_config/configs.
+Algorithm1 = linear
+Algorithm2 = advanced
+Algorithm3 = adaptive
+Adaptive_smooth = Adaptive smoothing of the movement of a sight
+Adaptive_smooth_tip = Adaptive smoothing of the movement of a sight at capture (depends on acceleration of the purpose).<br>If enabled, the smoothness parameters of the distance from the configuration file are ignored.
+AimSector = Sector capture
+AimSector_tip = The size of the sector, which triggered Automatic snap purpose.<br>The minimum value is almost identical to the standard Automatic snap.
+CaptureTime = Continued capture after the disappearance of the enemy
+CaptureTime_size = sec.
+Teleport = Forwarding camera aiming point
+Teleport_tip = Forwarding camera aiming point when you reset the arcade mode for capture, in order to prevent the spread of the scope's aim.<br>From the list, you can select the <B>on / off / toggle button in the battle</B>.
+Teleport_SPG = Forwarding camera for the Arty
+Teleport_SPG_tip =Forwarding camera aiming point when you reset the capture mode for arty mode, in order to prevent the spread of the scope's aim.
+Teleport_Sniper = Forwarding camera in sniper mode
+Teleport_Sniper_tip = Forwarding camera aiming point when switching to sniper mode while capturing.
+ZoomMin = Min. zoom ratio in the sniper mode
+ZoomMin_tip = Always minimum zoom ratio when switching in sniper mode.
+FixDist = Fixing distances using a universal key
+FixDist_tip = Fixing the distance to the object by pressing the universal key to reduce overshooting shells.
+LimitDist = Distance to disable anticipation
+LimitDist_tip = The distance to the target, which is closer than anticipated is disabled, and includes a standard grip.
+LimitDist_size = m.
+MaxSpeed = Speed to include anticipation
+MaxSpeed_tip = The speed of the captured target or his tank, which includes more than anticipated.
+MaxSpeed_size = km/h.
+PointSpeed = Speed to anticipate a point captured
+PointSpeed_tip = Speed captured with an arbitrary point, which includes more than anticipated.<br><B>Attention!</B> When placing too much importance on capturing an arbitrary point on the tank it will never go away in anticipation.
+PointSpeed_size = km/h.
+BlockDelay = Delay for a shot
+BlockDelay_tip = Delay for a shot, pressing "Fire", and the output target because of obstacles.
+BlockDelay_size = sec.
+Delay = Delay for inspection on both sides
+Delay_tip = Delay pressing Autolock for inspection by the parties, after which the takeover target will not be promoted.
+Delay_size = sec.
+BlockShoot = Blocking shots
+BlockShoot_tip = Blocking shots into Autolock, if the goal is not to sweep over the obstacle.
+Sound = Standard notification sound on the capture/unlocked/lost of target
+TextMessages = Text messages of mod over a minimap and over a sight
+PushMessage = Message on loading mod in the hangar
+
+
+Label_3 = Setting searching for vulnerabilities
+
+BotEnable = Aimbot
+BotEnable_tip = On / Off function searching vulnerabilities.
+Bot_Dop = Searching vulnerability only with pressed button
+Bot_Dop_tip = Searching vulnerabilities only works when you hold the universal key.<br><B>Attention!</B> Will not work if Aim at tracks turned on and is not configured on a separate key.
+Chassis = Aim at tracks
+Chassis_tip = Translation sight on the chassis of the tank.<br>From the list, you can select the <B>on / off /separate key.</B><br><B>Attention!</B> When you select "ON" and the mode is aiming only the key will work only Aim at tracks. For both functions, you must select a separate key to Aim at tracks.
+AutoShot = Autoshot
+AutoShot_tip = On / Off Autoshot at weak spot.
+Dispersion = Percentage of dispersion for Autoshot.
+Dispersion_size = %
+Limit_Bot = Distance to disable aimbot
+Limit_Bot_tip = The distance to the goal, beyond which find vulnerabilities is not performed.
+Limit_Bot_size = m.
+Bot_Speed = Search speed points
+Bot_Speed_tip = Search speed vulnerabilities. The value represents the number of seconds to search for the next point.
+Bot_Speed_size = sec.
+TargetMaxSpeed = Maximum speed of the target for aimbot.
+TargetMaxSpeed_tip = The maximum value of the target speed, below which the search for vulnerabilities.
+TargetMaxSpeed_size = km/h.
+
+
+Label_4 = Setting a marker anticipation
+
+ModMarker = Mode marker (no target lock)
+ModMarker_tip = Keystroke capture does not capture the target marker and displays anticipation before the opponent.
+Marker_color = Color marker anticipation
+Marker_color_tip = The choice of color for the display marker anticipation.
+Marker_SPG = Marker  in strategic mode
+Marker_SPG_tip = Forced switch mode marker (no target lock) when switch to strategic mode on Arty.
+MarkerSize = The size of the marker anticipation
+MarkerSize_size = %
+
+
+Label_5 = Setting the display of the captured enemy
+
+Indicator = Display the captured tank
+Indicator_tip = Showing the indicator captured tank in the form brackets/fields/stroke or without indicator.<br><B>Attention!</B> This option may not work with X-ray mod.
+Indicator1 = Field
+Indicator2 = Stroke
+Indicator3 = Disabled
+TankName = Model captured tank
+TankName_tip = Show text capture tank.
+BoxSize = The size of the brackets
+BoxSize_tip = If the indicator is selected for captured tank brackets, it is possible to change their size.
+BoxSize_size = %
+Indicator_color = The color indicator of the captured tank
+Indicator_color_tip = Surroundings colors around the captured tank.
+
+
+Label_6 = Customize text boxes display mod
+
+Detector = Additional indicator
+Detector_tip = Reflection in the center of the screen an additional indicator, automatic capture and arbitrary capture, also if the objectives in the form of a Star/Sight/Skull or without indicator.
+Detector1 = Stars
+Detector2 = Sight
+Detector3 = Skull
+Detector4 = Disabled
+DetectorPos = Additional position indicator
+DetectorPos_tip = Additional height indicator position from the center of the screen.
+Caption = Description capture
+Caption_tip = Display description in the center of the screen, when automatic capture and arbitrary capture.
+CaptionPos = The position of the description
+CaptionPos_tip = The position reports height from the center of the screen.
+CaptionSize = The size of the description
+StarSize = The size of the stars
+
+
+//---------------------------------------------------
+//     Descriptions in combat
+//---------------------------------------------------
+
+Aim_Center = Center
+Aim_Tracks = Tracks
+Aim_Turret = Turret
+Aim_point = Point
+Aim_stand = Standard capture
+Aim_proact = Capture with anticipation
+Config_load = AutoAim: Config loaded
+Config_upd = AutoAim: Config updated
+Config_err = AutoAim: Error in config
+Config_def = Loaded with default settings
+Config_los = AutoAim: Config not found
+Block_shot = Blocking shots
+Fix_dist = Rangefinder fixed
+Aim_on = AutoAim enabled
+Aim_off = AutoAim disabled
+
+
+//---------------------------------------------------
+//     Tundra
+//---------------------------------------------------
+
+label_tundra = Tundra
+
+Key_Full = Key On / Off full tundra
+Key_Trunk = Key On / Off tundra with trunks
+aim_tundra = Full tundra in sniper mode
+Key_black = Key On / Off black sky
+Key_close = Key emergency closing of the client
+Tundra_invert = Inversion of the tundra
+Tundra_invert_tip = While pressing the universal key, the tundra is inverted.
